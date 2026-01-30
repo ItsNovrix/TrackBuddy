@@ -27,7 +27,7 @@ Devvit.addSettings([
     type: 'string',
     name: 'flight_regex_setting',
     label: 'Flight Number Regex (Advanced)',
-    helpText: 'Regex for extraction. Ensure it has capturing groups.',
+    helpText: 'Regex for extracting flight numbers.',
     defaultValue: '([A-Z\\d]{2,3})[\\s-]?(\\d{1,5})', 
     scope: SettingScope.Installation,
   },
@@ -45,6 +45,14 @@ Devvit.addSettings([
     label: 'Future Flight Keywords',
     helpText: 'Keywords that trigger the future disclaimer.',
     defaultValue: FUTURE_KEYWORDS.join(', '), 
+    scope: SettingScope.Installation,
+  },
+  {
+    type: 'boolean',
+    name: 'sticky_comment',
+    label: 'Sticky Bot Comment',
+    helpText: 'When enabled, the bot will automatically sticky its comment to the top of the post.',
+    defaultValue: false,
     scope: SettingScope.Installation,
   },
 ]);
@@ -132,10 +140,21 @@ Devvit.addTrigger({
         `*This bot does not access live flight data.*`;
 
       // 7. EXECUTE
-      await context.reddit.submitComment({ id: postId, text: commentText });
+      const comment = await context.reddit.submitComment({ id: postId, text: commentText });
+      console.log("[Success] Comment posted successfully.");
+
+      // 8. STICKY (Only if enabled in settings)
+      if (settings.sticky_comment) {
+        try {
+          await comment.distinguish(true); // 'true' stickies the comment
+          console.log("[Success] Comment stickied.");
+        } catch (stickyError) {
+          console.error("[Error] Failed to sticky comment:", stickyError);
+        }
+      }
+
       await context.redis.set(storageKey, 'true');
       await context.redis.expire(storageKey, 604800);
-      console.log("[Success] Comment posted successfully.");
 
     } catch (error) {
       console.error("[Error] Critical failure in PostCreate trigger:", error);

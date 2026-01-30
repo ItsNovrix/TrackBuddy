@@ -46,8 +46,6 @@ No configuration or set-up is required for the bot to work at this time. All def
 
 Track Buddy is designed to be flexible. Moderators can fine-tune the bot's behavior directly through the bot settings. Whether you need to update the trigger flair, adjust the support message, or refine the flight number detection regex, you can manage it all from the Apps section of your Moderation Tools.
 
-Setting	Description	Default
-
 - **Required Post Flair**
   - The exact post flair text the bot looks for.
 
@@ -62,6 +60,9 @@ Setting	Description	Default
 
 - **Future Flight Keywords**
   - Comma-separated list that triggers the warning.
+
+- **Optional comment stickying**
+  - Optional toggle to automatically sticky bot comment on submission.
 
 ---
 
@@ -85,11 +86,13 @@ This app was developed in compliance with [Reddit's Developer Terms](https://www
 * v0.0.7: Further updates to bot logic for tracking post detection.
 * v0.0.8: Testing updated bot logic for tracking post detection.
 * v0.0.9: Official launch version - Updated bot logic implemented and confirmed, bot targets post flair rather than keywords for added reliability.
+* v0.0.10: Minor README update and bot reupload due to Devvit error.
+* v0.0.11: Added new optional toggle to automatically sticky bot comment on submission.
 
 ---
 
 ## 🆘 Support
 
-If you encounter any issues or have questions, please send a [message](https://reddit.com/r/TrackBuddy).
+If you encounter any issues or have questions, please visit [r/TrackBuddy](https://reddit.com/r/TrackBuddy).
 
 Thanks for using **Track Buddy**!
