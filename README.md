@@ -89,11 +89,12 @@ This app was developed in compliance with [Reddit's Developer Terms](https://www
 * v0.0.10: Minor README update and bot reupload due to Devvit error.
 * v0.0.11: Added new optional toggle to automatically sticky bot comment on submission.
 * v0.0.12: Updated Devvit version to latest version. Updated README.
+* v0.0.13: Updated README.
 
 ---
 
 ## 🆘 Support
 
-If you encounter any issues or have questions, please DM [u/ItsNovrix]](https://reddit.com/u/ItsNovrix).
+If you encounter any issues or have questions, please DM [u/ItsNovrix](https://reddit.com/u/ItsNovrix).
 
 Thanks for using **Track Buddy**!
