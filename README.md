@@ -68,7 +68,7 @@ Track Buddy is designed to be flexible. Moderators can fine-tune the bot's behav
 
 ## 🧾 Source & License
 
-The source code for the Press app is available on [GitHub](https://github.com/ItsNovrix/TrackBuddy).
+The source code for Track Buddy is available on [GitHub](https://github.com/ItsNovrix/TrackBuddy).
 
 This project is licensed under the [BSD-3-Clause License](https://opensource.org/licenses/BSD-3-Clause).
 This app was developed in compliance with [Reddit's Developer Terms](https://www.redditinc.com/policies/developer-terms) and adheres to the guidelines for the Devvit platform.
@@ -88,11 +88,12 @@ This app was developed in compliance with [Reddit's Developer Terms](https://www
 * v0.0.9: Official launch version - Updated bot logic implemented and confirmed, bot targets post flair rather than keywords for added reliability.
 * v0.0.10: Minor README update and bot reupload due to Devvit error.
 * v0.0.11: Added new optional toggle to automatically sticky bot comment on submission.
+* v0.0.12: Updated Devvit version to latest version. Updated README.
 
 ---
 
 ## 🆘 Support
 
-If you encounter any issues or have questions, please visit [r/TrackBuddy](https://reddit.com/r/TrackBuddy).
+If you encounter any issues or have questions, please DM [u/ItsNovrix]](https://reddit.com/u/ItsNovrix).
 
 Thanks for using **Track Buddy**!
