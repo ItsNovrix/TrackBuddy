@@ -90,6 +90,7 @@ This app was developed in compliance with [Reddit's Developer Terms](https://www
 * v0.0.11: Added new optional toggle to automatically sticky bot comment on submission.
 * v0.0.12: Updated Devvit version to latest version. Updated README.
 * v0.0.13: Updated README.
+* v0.0.14: Updated app to latest Devvit release.
 
 ---
 
