@@ -1,0 +1,61 @@
+{
+  "$schema": "https://developers.reddit.com/schema/config-file.v1.json",
+  "name": "track-buddy",
+  "permissions": {
+    "reddit": true,
+    "redis": true
+  },
+  "server": {
+    "dir": "dist/server",
+    "entry": "index.cjs"
+  },
+  "triggers": {
+    "onPostSubmit": "/internal/triggers/on-post-submit"
+  },
+  "marketingAssets": {
+    "icon": "assets/icon.png"
+  },
+  "settings": {
+    "subreddit": {
+      "required_flair": {
+        "type": "string",
+        "label": "Required Post Flair",
+        "helpText": "The bot only triggers on posts with this exact flair.",
+        "defaultValue": "Tracking Request"
+      },
+      "reassurance_message": {
+        "type": "paragraph",
+        "label": "Reassurance Message",
+        "helpText": "The support message at the bottom of the comment.",
+        "defaultValue": "Delays, altitude changes, and routing adjustments are completely normal. You are safe, and you are not alone."
+      },
+      "flight_regex_setting": {
+        "type": "string",
+        "label": "Flight Number Regex",
+        "helpText": "Regex for extracting flight numbers.",
+        "defaultValue": "([A-Z\\\\d]{2,3})[\\\\s-]?(\\\\d{1,5})"
+      },
+      "future_warning_text": {
+        "type": "paragraph",
+        "label": "Future Flight Disclaimer",
+        "helpText": "Warning shown if future keywords are detected.",
+        "defaultValue": "Note: Since your flight appears to be in the future, these links may show today's flights until your actual departure time."
+      },
+      "future_keywords": {
+        "type": "paragraph",
+        "label": "Future Flight Keywords",
+        "helpText": "Keywords that trigger the future disclaimer.",
+        "defaultValue": ""
+      },
+      "sticky_comment": {
+        "type": "boolean",
+        "label": "Sticky Bot Comment",
+        "helpText": "When enabled, the bot will automatically sticky its comment to the top of the post.",
+        "defaultValue": false
+      }
+    }
+  },
+  "dev": {
+    "subreddit": "NovrixLabs"
+  }
+}

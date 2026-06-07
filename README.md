@@ -1,6 +1,6 @@
 # Track Buddy - Track users with upcoming flights
 
-Track Buddy is a specialized Reddit bot built specifically for the r/fearofflying subreddit. It monitors posts for users requesting tracking support and automatically provides direct links to those flights via FlightAware and FlightRadar24, paired with a supportive message to help anxious flyers.
+Track Buddy is a specialized Reddit bot built specifically for the r/fearofflying subreddit. It monitors posts for users requesting flight tracking support and automatically provides direct links to those flights via FlightAware and FlightRadar24, paired with a supportive message to help reassure anxious flyers.
 
 ---
 
@@ -75,7 +75,14 @@ This app was developed in compliance with [Reddit's Developer Terms](https://www
 
 ---
 
-# Changelog
+## 🚀 Changelog
+
+**🛡️ Core Releases**
+
+* v1.0.0: Migrated app off deprecated blocks architecture.
+* v1.0.1: Updated app settings.
+
+**📂 Beta Development History**
 
 * v0.0.1: Basic functionality implemented.
 * v0.0.2: Corrected errors in bot logic and comment formatting.
