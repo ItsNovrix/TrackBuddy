@@ -1,7 +1,7 @@
 {
   "private": true,
   "name": "track-buddy",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "license": "BSD-3-Clause",
   "type": "module",
   "scripts": {
@@ -10,12 +10,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
-    "@devvit/start": "0.13.2",
+    "@devvit/start": "^0.13.5",
+    "devvit": "^0.13.5",
     "typescript": "5.8.3",
     "vite": "^8.0.16"
   },
   "dependencies": {
-    "@devvit/web": "0.13.2",
+    "@devvit/public-api": "^0.13.5",
+    "@devvit/web": "^0.13.5",
     "@hono/node-server": "^2.0.4",
     "hono": "^4.12.23"
   }

@@ -81,6 +81,7 @@ This app was developed in compliance with [Reddit's Developer Terms](https://www
 
 * v1.0.0: Migrated app off deprecated blocks architecture.
 * v1.0.1: Updated app settings.
+* v1.0.2: Updated app to latest Devvit version.
 
 **📂 Beta Development History**
 
